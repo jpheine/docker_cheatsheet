@@ -57,7 +57,7 @@ Get detailed info about container
 Show exposed ports
 `docker container port containername`
 
-#docker network ls
+## docker network ls
 Show networks
 `docker network ls`
 
@@ -67,7 +67,7 @@ Show details
 Attach container
 `docker network connect`
 `docker netowrk disconnect`
-Example: `docker network connect network container`
+Example: `docker network connect networkname containername`
 
 Create network
 `docker network create networkname`
