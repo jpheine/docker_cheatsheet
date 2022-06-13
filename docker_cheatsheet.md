@@ -52,16 +52,6 @@ example (run bash in mysql)
 
 `docker container exec -it mysql bash`
 
-### docker pull
-pull latest image:
-
-`docker pull imagename`
-
-### docker image ls
-Overview of all images:
-
-`docker image ls` 
-
 ### docker container inspect
 Get detailed info about container
 
@@ -92,3 +82,23 @@ Create network
 
 `docker network create networkname`
 
+## Images
+
+### docker pull
+pull latest image:
+
+`docker pull imagename`
+
+### docker image ls
+Overview of all images:
+
+`docker image ls` 
+
+### docker image inspect
+
+Get detailed information about image:
+`docker image inspect imagename`
+
+### docker image history
+Show image layers:
+`docker image history imagename`
