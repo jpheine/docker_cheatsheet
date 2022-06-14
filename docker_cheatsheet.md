@@ -59,6 +59,7 @@ Get detailed info about container
 
 ### docker container port
 Show exposed ports
+
 `docker container port containername`
 
 ### docker network ls
@@ -74,6 +75,7 @@ Attach container
 
 `docker network connect`
 `docker netowrk disconnect`
+
 Example: 
 
 `docker network connect networkname containername`
@@ -101,4 +103,26 @@ Get detailed information about image:
 
 ### docker image history
 Show image layers:
+
 `docker image history imagename`
+
+## Docker Tag
+Retag an existing image (e.g. for push)
+
+Attention: Multiple Tags can be used for the Same image. Image ID unqiuely identifies the image.
+
+`docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]`
+
+## Dockerfile
+Runned top down -> order matters.
+
+`FROM` required
+
+`ENV` importand -> Set environment variables
+
+`RUN` optional commands to run at shell in container at build time
+
+`Expose` expose ports
+
+`CMD` run whenever container is launched
+
