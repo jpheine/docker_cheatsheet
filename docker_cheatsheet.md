@@ -126,3 +126,17 @@ Runned top down -> order matters.
 
 `CMD` run whenever container is launched
 
+## Volumes
+Have to be manually deleted! Survive deletion of container!
+
+Show all volumes:
+
+`docker volume ls`
+
+Inspect volumne:
+
+`docker volume ls volumeid`
+
+Name for volume, In docker container run:
+
+-v mysql-db:/var/... 
